@@ -13,6 +13,7 @@ app.get("/webhook", (req, res) => {
   if (req.query["hub.verify_token"] === "sdfsrrssystis?.'pl'fsdfsrf") {
     const hubChallenge = req.query["hub.challenge"];
     res.status(200).send(hubChallenge);
+    console.log("deployed");
   } else {
     res.send("Error, wrong validation token");
   }
