@@ -10,7 +10,7 @@ const PAGE_ACCESS_TOKEN =
 app.use(bodyParser.json());
 
 app.get("/webhook", (req, res) => {
-  if (req.query["hub.verify_token"] === "sdfsrrssystis?.'pl'fsdfsrf") {
+  if (req.query["hub.verify_token"] === "INsEmIalTIfULtZMA") {
     const hubChallenge = req.query["hub.challenge"];
     res.status(200).send(hubChallenge);
     console.log("deployed");
